@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@300;400;600;800&family=Comfortaa:wght@300;400;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -27,8 +27,8 @@
             margin: 0 auto;
             padding: 2rem;
         }
-        /* Обновленная навигационная панель с закругленными краями */
         
+        /* Обновленная навигационная панель с закругленными краями */
         .navbar {
             background: rgba(2, 15, 30, 0.8);
             backdrop-filter: blur(15px);
@@ -38,8 +38,7 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(0, 119, 255, 0.2);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border-radius: 0 0 20px 20px;
-            /* Добавлены закругленные края снизу */
+            border-radius: 0 0 20px 20px; /* Добавлены закругленные края снизу */
         }
         
         .nav-container {
@@ -169,7 +168,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: transparent;
-            box-shadow: 0 0 15px rgba(0, 102, 255, 0.7), 0 0 30px rgba(0, 102, 255, 0.5), 0 0 45px rgba(0, 102, 255, 0.3), 0 0 60px rgba(0, 102, 255, 0.1);
+            box-shadow: 
+                0 0 15px rgba(0, 102, 255, 0.7),
+                0 0 30px rgba(0, 102, 255, 0.5),
+                0 0 45px rgba(0, 102, 255, 0.3),
+                0 0 60px rgba(0, 102, 255, 0.1);
             animation: pulse 3s infinite;
         }
         
@@ -200,8 +203,8 @@
             font-family: 'Comfortaa', cursive;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
         }
-        /* Изменено: круглое окно для имени */
         
+        /* Изменено: круглое окно для имени */
         .name-container {
             display: inline-block;
             position: relative;
@@ -373,8 +376,8 @@
             position: relative;
             overflow: hidden;
         }
-        /* Стиль для кликабельных навыков */
         
+        /* Стиль для кликабельных навыков */
         .skill a {
             color: inherit;
             text-decoration: none;
@@ -511,8 +514,8 @@
             height: 1px;
             background: linear-gradient(to right, transparent, rgba(0, 153, 255, 0.3), transparent);
         }
-        /* Социальные кнопки в футере */
         
+        /* Социальные кнопки в футере */
         .social-buttons {
             display: flex;
             justify-content: center;
@@ -549,8 +552,8 @@
             color: white;
             animation: iconPulse 1s infinite alternate;
         }
-        /* Круглая панель */
         
+        /* Круглая панель */
         .circle-panel {
             position: fixed;
             bottom: 40px;
@@ -605,56 +608,69 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
         }
-        /* Адаптивность */
         
+        /* Адаптивность */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.2rem;
             }
+            
             h2 {
                 font-size: 1.5rem;
             }
+            
             .profile-pic {
                 width: 150px;
                 height: 150px;
             }
+            
             .glow-effect {
                 width: 170px;
                 height: 170px;
             }
+            
             .profile-pic::before {
                 font-size: 3rem;
             }
+            
             .section {
                 padding: 1.5rem;
             }
+            
             .name-container {
                 padding: 0.5rem 1.5rem;
             }
+            
             .nav-container {
                 flex-direction: column;
                 gap: 1rem;
             }
+            
             .nav-links {
                 gap: 1rem;
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            
             .circle-panel {
                 width: 100px;
                 height: 100px;
                 bottom: 20px;
                 right: 20px;
             }
+            
             .circle-icon {
                 font-size: 2rem;
             }
+            
             .circle-title {
                 font-size: 0.8rem;
             }
+            
             .social-buttons {
                 gap: 1rem;
             }
+            
             .social-button {
                 width: 45px;
                 height: 45px;
@@ -698,11 +714,10 @@
         }
     </style>
 </head>
-
 <body>
     <div class="bubbles" id="bubbles"></div>
-
-
+    
+    <!-- Обновленная навигационная панель с закругленными краями -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">FD</div>
@@ -714,7 +729,7 @@
             </div>
         </div>
     </nav>
-
+    
     <div class="container">
         <header>
             <div class="header-bg"></div>
@@ -727,13 +742,13 @@
             </div>
             <h2>Мастер Ассемблера</h2>
         </header>
-
+        
         <section class="section" id="about">
             <h3>Обо мне</h3>
             <p></p>
             <p>Кодю на языках C#, C# Unity, Web. Создаю игры, программы, вебсайты.</p>
         </section>
-
+        
         <section class="section" id="skills">
             <h3>Технические навыки</h3>
             <p>Я специализируюсь на низкоуровневом программировании и имею опыт работы со следующими технологиями:</p>
@@ -745,7 +760,7 @@
                 <div class="skill">Java</div>
             </div>
         </section>
-
+        
         <section class="section" id="contact">
             <h3>Контакты</h3>
             <p>Связь со мной.</p>
@@ -756,7 +771,7 @@
             </div>
         </section>
     </div>
-
+    
     <!-- Круглая панель -->
     <div class="circle-panel">
         <div class="circle-content">
@@ -764,48 +779,48 @@
             <div class="circle-title">Мои проекты</div>
         </div>
     </div>
-
+    
     <footer>
-        <p>© 2025 FksDev | Создано с любовью
-            <3</p>
-
-                <div class="social-buttons">
-                    <a href="https://t.me/HET1337" class="social-button" target="_blank">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="mailto:synergeticsystemsdev@gmail.com" class="social-button">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/sofnek" class="social-button" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="https://t.me/sofnek1337" class="social-button" target="_blank">
-                        <i class="fas fa-bullhorn"></i>
-                    </a>
-                </div>
+        <p>© 2025 FksDev | Создано с любовью<3</p>
+        
+        <!-- Добавлены кнопки социальных сетей в футер -->
+        <div class="social-buttons">
+            <a href="https://t.me/HET1337" class="social-button" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:synergeticsystemsdev@gmail.com" class="social-button">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/sofnek" class="social-button" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Добавлена кнопка для Telegram-канала -->
+            <a href="https://t.me/sofnek1337" class="social-button" target="_blank">
+                <i class="fas fa-bullhorn"></i>
+            </a>
+        </div>
     </footer>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const bubblesContainer = document.getElementById('bubbles');
-
+            
             function createBubbles() {
                 const bubbleCount = 20;
-
+                
                 for (let i = 0; i < bubbleCount; i++) {
                     createBubble();
                 }
-
+                
                 function createBubble() {
                     const bubble = document.createElement('div');
                     bubble.classList.add('bubble');
-
+                    
                     const size = Math.random() * 80 + 20;
                     const left = Math.random() * 100;
                     const duration = Math.random() * 10 + 10;
                     const delay = Math.random() * 15;
-
+                    
                     bubble.style.width = `${size}px`;
                     bubble.style.height = `${size}px`;
                     bubble.style.left = `${left}%`;
@@ -813,53 +828,52 @@
                     bubble.style.animationDelay = `${delay}s`;
                     bubble.style.background = `radial-gradient(circle at 30% 30%, rgba(0, 153, 255, 0.1), rgba(0, 20, 70, 0.05))`;
                     bubble.style.boxShadow = `0 0 10px rgba(0, 153, 255, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.2)`;
-
+                    
                     bubblesContainer.appendChild(bubble);
-
+        
                     setTimeout(() => {
                         bubble.remove();
                         createBubble();
                     }, (duration + delay) * 1000);
                 }
             }
-
+            
             createBubbles();
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-
+                    
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
                 });
             });
-
+            
             const sections = document.querySelectorAll('.section');
-
+            
             function checkScroll() {
                 sections.forEach(section => {
                     const sectionTop = section.getBoundingClientRect().top;
                     const windowHeight = window.innerHeight;
-
+                    
                     if (sectionTop < windowHeight * 0.8 && !section.classList.contains('active')) {
                         section.style.animation = 'slideUp 0.5s forwards';
                         section.classList.add('active');
                     }
                 });
             }
-
-
+            
+            // Начальная проверка
             checkScroll();
-
-
+            
+            // Проверка при прокрутке
             window.addEventListener('scroll', checkScroll);
-
-
+            
+            // Добавляем функциональность для круглой панели
             document.querySelector('.circle-panel').addEventListener('click', function() {
                 alert('Проекты скоро будут доступны!');
             });
         });
     </script>
 </body>
-
 </html>
